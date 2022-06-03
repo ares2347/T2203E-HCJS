@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="method" action="#">
+    <div class="form-group">
+<!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Fullname</label>
+        <input type="text" name="fullname" placeholder="Full name" required/>
+<!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email" required />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Age</label>
+        <input type="number" name="age" min="10" max="99" value="11" placeholder="Age" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input, value la gia tri default-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Password" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>D.O.B</label>
+        <input type="date" name="dob" placeholder="D.O.B" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Time</label>
+        <input type="time" name="time" placeholder="Time" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="Phone" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Attachment</label>
+        <input type="file" name="attachment" placeholder="Attachment" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Color</label>
+        <input type="color" name="color" placeholder="Color" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email" />
+        <!--    type la kieu cua o input, name la dau muc de may chu nhan thong tin nguoi dung nhap vao, place holder la nhan trong input-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Gender</label>
+        <label><input type="radio" name="gender" value="Male"/> Male</label>
+        <label><input type="radio" name="gender" value="Female"/>Female</label>
+        <label><input type="radio" name="gender" value="Other"/>WGAF</label>
+<!--radio thi chi duoc chon 1 neu co name giong nhau, con name khac nhau thi chon thoai . radio khi da chon thi ko bo dc-->
+<!--        neu boc ca tag input vao label thi bam vao label se chon duoc (hit-box to hon)-->
+    </div>
+    <div class="form-group">
+        <!--    chi co 2 method chinh la get va post, action thi giong href -->
+        <label>Options</label>
+        <label><input type="checkbox" name="options[]" value="option1"/>Opt1</label>
+        <label><input type="checkbox" name="options[]" value="option2"/>Opt2</label>
+        <label><input type="checkbox" name="options[]" value="option3"/>Opt3</label>
+<!--        voi checkbox, neu name giong nhau thi khi submit se chi gui duoc lua chon cuoi cung. Con neu muon gui cac ket qua da check, them dau mang [] vao sau name. checkbox chon nhieu dc va chon duoc cung bo dc-->
+    </div>
+    <div class="form-group">
+<!--        select bat buoc phai co name va co cac lua chon de chon. ko co value thi khi submit se laf submit null-->
+        <select name="city">
+            <option value="">Select a city...</option>
+            <optgroup label="VN">
+            <option value="hn">Ha Noi</option>
+            <option value="sg">TPHCM</option>
+            <option value="hp">Hai Phong</option>
+            </optgroup>
+            <optgroup label="US">
+                <option value="nyc">NYC</option>
+                <option value="la">L.A</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Introduction</label>
+        <textarea name="introduction" cols="50" rows="10" placeholder="Write something"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button">Button</button>
+</form>
+</body>
+</html>

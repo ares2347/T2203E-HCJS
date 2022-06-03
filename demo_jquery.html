@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Jquery</title>
+</head>
+<body>
+  <h1 id="head1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, magni.</h1>
+  <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloremque ea repellendus reprehenderit veritatis, voluptatum. Deleniti id numquam quas ratione tempore? Asperiores ea est in minima numquam, placeat saepe tempora!</p>
+
+  <button type="button" onclick="onBox()">On</button>
+  <button type="button" onclick="offBox()">Off</button>
+  <ul class="box">
+      <li>Option1</li>
+      <li>Option2</li>
+  </ul>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+      let hObj=$("#head1");//return jQuery object
+      hObj.css("color","red"); //C1
+      hObj.css({
+          "background-color":"yellowgreen",
+          "margin-top":"5px"
+      }) //C2
+      hObj.text("hello world!");
+      hObj.html("<i>hello world </i>");
+      hObj.append("<i>T2203E</i>");
+      hObj.prepend("<b>Title </b>")
+
+      let para=$(".para");//return jQuery object
+      para.css("color","pink");
+
+      //call API
+      $.ajax({
+          url: "https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+          method: "GET",
+          success: function (result){
+            //callback goes here
+              console.log(result)//no need JSON.parse
+          },
+          error: function (err){
+              //function when call api error
+          }
+      });
+      let box=$(".box");
+      function onBox(){
+          //box.show();
+          //box.fadeIn(1000);
+          box.slideDown()
+      }
+      function offBox(){
+          box.hide();
+          //box.fadeOut(400);
+          //box.slideUp();
+      }
+  </script>
+</body>
+</html>

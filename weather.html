@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: lightblue;
+            width: 250px;
+            height: 150px;
+        }
+        .container h2{
+            width: 120px;
+        }
+        .container h3{
+            width: 120px;
+            float: left;
+        }
+        /**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+</head>
+<body>
+<section id="main">
+    <div id="map" style="width:500px;height:500px;"></div>
+</section>
+<script src="js/weather.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initialize"></script>
+</body>
+</html>
